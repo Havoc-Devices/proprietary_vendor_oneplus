@@ -18,7 +18,6 @@
 PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus3/proprietary/bin/dpmd:system/bin/dpmd \
     vendor/oneplus/oneplus3/proprietary/bin/ifaadaemon:system/bin/ifaadaemon \
-    vendor/oneplus/oneplus3/proprietary/bin/perfservice:system/bin/perfservice \
     vendor/oneplus/oneplus3/proprietary/bin/wfdservice:system/bin/wfdservice \
     vendor/oneplus/oneplus3/proprietary/etc/GyroOffset_db.config:system/etc/GyroOffset_db.config \
     vendor/oneplus/oneplus3/proprietary/etc/camera/camera_config.xml:system/etc/camera/camera_config.xml \
@@ -59,7 +58,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus3/proprietary/etc/firmware/tp/fw_synaptics_touchkey.img:system/etc/firmware/tp/fw_synaptics_touchkey.img \
     vendor/oneplus/oneplus3/proprietary/etc/fsync_db.config:system/etc/fsync_db.config \
     vendor/oneplus/oneplus3/proprietary/etc/init/dpmd.rc:system/etc/init/dpmd.rc \
-    vendor/oneplus/oneplus3/proprietary/etc/init/perfservice.rc:system/etc/init/perfservice.rc \
     vendor/oneplus/oneplus3/proprietary/etc/init/wfdservice.rc:system/etc/init/wfdservice.rc \
     vendor/oneplus/oneplus3/proprietary/etc/oneplus3T_vstab_db_1080p_video_0.config:system/etc/oneplus3T_vstab_db_1080p_video_0.config \
     vendor/oneplus/oneplus3/proprietary/etc/oneplus3T_vstab_db_1080p_video_1.config:system/etc/oneplus3T_vstab_db_1080p_video_1.config \
@@ -69,7 +67,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus3/proprietary/etc/oneplus3_vstab_db_1080p_video_1.config:system/etc/oneplus3_vstab_db_1080p_video_1.config \
     vendor/oneplus/oneplus3/proprietary/etc/oneplus3_vstab_db_720p_video_0.config:system/etc/oneplus3_vstab_db_720p_video_0.config \
     vendor/oneplus/oneplus3/proprietary/etc/oneplus3_vstab_db_720p_video_1.config:system/etc/oneplus3_vstab_db_720p_video_1.config \
-    vendor/oneplus/oneplus3/proprietary/etc/perf/whitelistedapps.xml:system/etc/perf/whitelistedapps.xml \
     vendor/oneplus/oneplus3/proprietary/etc/permissions/cneapiclient.xml:system/etc/permissions/cneapiclient.xml \
     vendor/oneplus/oneplus3/proprietary/etc/permissions/com.qti.dpmframework.xml:system/etc/permissions/com.qti.dpmframework.xml \
     vendor/oneplus/oneplus3/proprietary/etc/permissions/com.qti.location.sdk.xml:system/etc/permissions/com.qti.location.sdk.xml \
@@ -165,10 +162,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus3/proprietary/lib/libopcamera_native_modules.so:system/lib/libopcamera_native_modules.so \
     vendor/oneplus/oneplus3/proprietary/lib/libqmi_cci_system.so:system/lib/libqmi_cci_system.so \
     vendor/oneplus/oneplus3/proprietary/lib/libqomx_core.so:system/lib/libqomx_core.so \
-    vendor/oneplus/oneplus3/proprietary/lib/libqti-at.so:system/lib/libqti-at.so \
-    vendor/oneplus/oneplus3/proprietary/lib/libqti-perfd-client_system.so:system/lib/libqti-perfd-client_system.so \
-    vendor/oneplus/oneplus3/proprietary/lib/libqti-util_system.so:system/lib/libqti-util_system.so \
-    vendor/oneplus/oneplus3/proprietary/lib/libqti_performance.so:system/lib/libqti_performance.so \
     vendor/oneplus/oneplus3/proprietary/lib/libteeclientjni.so:system/lib/libteeclientjni.so \
     vendor/oneplus/oneplus3/proprietary/lib/libtrueportrait.so:system/lib/libtrueportrait.so \
     vendor/oneplus/oneplus3/proprietary/lib/libwfdavenhancements.so:system/lib/libwfdavenhancements.so \
@@ -211,10 +204,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus3/proprietary/lib64/libmmosal.so:system/lib64/libmmosal.so \
     vendor/oneplus/oneplus3/proprietary/lib64/libparam.so:system/lib64/libparam.so \
     vendor/oneplus/oneplus3/proprietary/lib64/libqmi_cci_system.so:system/lib64/libqmi_cci_system.so \
-    vendor/oneplus/oneplus3/proprietary/lib64/libqti-at.so:system/lib64/libqti-at.so \
-    vendor/oneplus/oneplus3/proprietary/lib64/libqti-perfd-client_system.so:system/lib64/libqti-perfd-client_system.so \
-    vendor/oneplus/oneplus3/proprietary/lib64/libqti-util_system.so:system/lib64/libqti-util_system.so \
-    vendor/oneplus/oneplus3/proprietary/lib64/libqti_performance.so:system/lib64/libqti_performance.so \
     vendor/oneplus/oneplus3/proprietary/lib64/librcc.so:system/lib64/librcc.so \
     vendor/oneplus/oneplus3/proprietary/lib64/libteeclientjni.so:system/lib64/libteeclientjni.so \
     vendor/oneplus/oneplus3/proprietary/lib64/libteeclientjniv2.so:system/lib64/libteeclientjniv2.so \
@@ -886,8 +875,6 @@ PRODUCT_PACKAGES += \
     datastatusnotification \
     embms \
     imssettings \
-    QPerformance \
-    UxPerformance \
     CNEService \
     IFAAService \
     WfdService \
